@@ -7,6 +7,7 @@ import { GoPeople } from "react-icons/go";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { SlCalender } from "react-icons/sl";
 import { CiSearch } from "react-icons/ci";
+import Link from "next/link";
 
 const peopleList = [
   { id: 1, name: "John Doe", tags: ["Manager", "Finance"] },
@@ -65,7 +66,7 @@ const Filter = () => {
         <div className="md:flex h-[348px] w-[612px] border-b ">
           <ul className="text-sm font-medium text-gray-800 dark:text-gray-700 md:me-4 mb-4 md:mb-0 basis-2/5 bg-[#F8FAFC] p-2 border-r">
             <li>
-              <a
+              <Link
                 href="#"
                 className={getLinkClass("scheduled_date")}
                 onClick={() => {
@@ -75,10 +76,10 @@ const Filter = () => {
               >
                 <SlCalender />
                 Scheduled Date
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+            <Link
                 href="#"
                 className={getLinkClass("people")}
                 onClick={() => {
@@ -88,10 +89,10 @@ const Filter = () => {
               >
                 <GoPeople />
                 People
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+            <Link
                 href="#"
                 className={getLinkClass("services")}
                 onClick={() => {
@@ -101,7 +102,7 @@ const Filter = () => {
               >
                 <LuLayoutDashboard />
                 Services / Products
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="py-4 text-medium  rounded-lg w-full basis-3/5 ">
