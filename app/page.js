@@ -225,7 +225,7 @@ export default function Home(){
           </div>
         </div>
 
-        <div className="relative">
+        <div>
           {isColumn && <EditColumn />}
           {isFilter && <Filter />}
           {/* main */}
