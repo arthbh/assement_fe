@@ -61,8 +61,7 @@ const Filter = () => {
     setIsToOpen(true);
   };
   return (
-    <div className="transition-all duration-300 absolute z-[100] bg-white  mt-[5px] pt-[20px]">
-      <div className=" h-[418px] w-[630px] py-2 px-2 rounded-lg shadow-md  gap-2 relative   ">
+      <>
         <div className="md:flex h-[348px] w-[612px] border-b ">
           <ul className="text-sm font-medium text-gray-800 dark:text-gray-700 md:me-4 mb-4 md:mb-0 basis-2/5 bg-[#F8FAFC] p-2 border-r">
             <li>
@@ -322,8 +321,7 @@ const Filter = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    </>
   );
 };
 

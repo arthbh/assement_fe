@@ -226,8 +226,20 @@ export default function Home(){
         </div>
 
         <div>
-          {isColumn && <EditColumn />}
-          {isFilter && <Filter />}
+          {isColumn &&
+              <div className="transition-all duration-300 absolute z-[100] bg-white  pt-[20px] ml-[900px]   ">
+              <div className="h-[418px] w-[320px] p-4 rounded-lg shadow-md bg-white flex flex-col gap-2   ">
+              <EditColumn />
+                </div>
+                </div>
+          }
+          {isFilter && 
+              <div className="transition-all duration-300 absolute z-[100] bg-white  mt-[5px] pt-[20px]">
+              <div className=" h-[418px] w-[630px] py-2 px-2 rounded-lg shadow-md  gap-2 relative   ">
+          <Filter />
+          </div>
+          </div>
+          }
           {/* main */}
           <div
             className={`transition-all duration-100 ${

@@ -2,8 +2,7 @@ import React from 'react'
 
 const EditColumn = () => {
   return (
-    <div className="transition-all duration-300 absolute z-[100] bg-white  pt-[20px] ml-[900px]   ">
-              <div className="h-[418px] w-[320px] p-4 rounded-lg shadow-md bg-white flex flex-col gap-2   ">
+<>
                 <h1 className="text-base font-semibold ">Edit Columns</h1>
                 <p className="text-sm text-gray-500 ">
                   Select the columns to rearrange
@@ -188,8 +187,7 @@ const EditColumn = () => {
                     Apply
                   </div>
                 </div>
-              </div>
-            </div>
+            </>
   )
 }
 
