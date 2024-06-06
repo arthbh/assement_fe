@@ -202,7 +202,7 @@ export default function Home(){
             onClick={toggleFilter}
           >
             <CiFilter />
-            <p>Add Filter</p>
+            {/* <p>Add Filter</p> */}
           </div>
           <div className="flex justify-evenly items-center gap-6">
             <div className="relative">
