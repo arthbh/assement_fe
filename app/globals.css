@@ -3,36 +3,34 @@
 @tailwind utilities;
 
 
-  /* Customize the scrollbar for Webkit-based browsers (Chrome, Safari) */
   .custom-scrollbar::-webkit-scrollbar {
-    width: 8px; /* Width of the entire scrollbar */
+    width: 8px; 
   }
 
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Background of the scrollbar track */
-    border-radius: 10px; /* Optional: add rounded corners */
+    background: #f1f1f1;
+    border-radius: 10px;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Optional: add rounded corners */
+    background: #888;
+    border-radius: 10px; 
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color when hovering over the scrollbar thumb */
+    background: #555;
   }
   .custom-scrollbar::-webkit-scrollbar-button {
-    display: none; /* Remove the top and bottom scroll arrows */
+    display: none;
   }
 
-  /* Customize the scrollbar for Firefox */
   .custom-scrollbar {
-    scrollbar-width: thin; /* Width of the scrollbar */
-    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1; 
   }
 
   .custom-scrollbar:hover {
-    scrollbar-color: #555 #f1f1f1; /* Color when hovering over the scrollbar */
+    scrollbar-color: #555 #f1f1f1; 
   }
   .custom-select option {
     padding: 10px 0; 
