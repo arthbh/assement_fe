@@ -63,8 +63,8 @@ const Filter = () => {
   return (
       <>
         <div className="flex h-[348px] w-[612px] border-b ">
-          <div className="text-sm font-medium text-gray-800 dark:text-gray-700 md:me-4 mb-4 md:mb-0 basis-2/5 bg-[#F8FAFC] p-2 border-r">
-          <ul>
+          <div>
+          <ul className="text-sm font-medium text-gray-800 dark:text-gray-700 md:me-4 mb-4 md:mb-0 basis-2/5 bg-[#F8FAFC] p-2 border-r">
             <li>
               <Link
                 href="#"
