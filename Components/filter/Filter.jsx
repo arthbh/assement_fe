@@ -62,8 +62,9 @@ const Filter = () => {
   };
   return (
       <>
-        <div className="md:flex h-[348px] w-[612px] border-b ">
-          <ul className="text-sm font-medium text-gray-800 dark:text-gray-700 md:me-4 mb-4 md:mb-0 basis-2/5 bg-[#F8FAFC] p-2 border-r">
+        <div className="flex h-[348px] w-[612px] border-b ">
+          <div className="text-sm font-medium text-gray-800 dark:text-gray-700 md:me-4 mb-4 md:mb-0 basis-2/5 bg-[#F8FAFC] p-2 border-r">
+          <ul>
             <li>
               <Link
                 href="#"
@@ -104,6 +105,7 @@ const Filter = () => {
               </Link>
             </li>
           </ul>
+          </div>
           <div className="py-4 text-medium  rounded-lg w-full basis-3/5 ">
             {toggleOption === "scheduled_date" && (
               <div>
