@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  /* Customize the scrollbar for Webkit-based browsers (Chrome, Safari) */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Width of the entire scrollbar */
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Optional: add rounded corners */
   }
-}
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Optional: add rounded corners */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovering over the scrollbar thumb */
+  }
+  .custom-scrollbar::-webkit-scrollbar-button {
+    display: none; /* Remove the top and bottom scroll arrows */
+  }
+
+  /* Customize the scrollbar for Firefox */
+  .custom-scrollbar {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
+  }
+
+  .custom-scrollbar:hover {
+    scrollbar-color: #555 #f1f1f1; /* Color when hovering over the scrollbar */
+  }
+  .custom-select option {
+    padding: 10px 0; 
+    height: 140px;
+  }
+  
